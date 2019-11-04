@@ -1,0 +1,23 @@
+require('./bootstrap');
+
+window.Vue = require('vue');
+
+import Vue from 'vue'
+import App from '../App.vue'
+import router from '../router'
+import ArgonDashboard from '../plugins/argon-dashboard'
+
+Vue.config.productionTip = false
+
+Vue.use(ArgonDashboard)
+new Vue({
+  router,
+  render: h => h(App)
+}).$mount('#app')
+
+
+Vue.component('root-layout', require('./components/Layout.vue').default); 
+/*
+const app = new Vue({
+	el: '#app'
+});*/

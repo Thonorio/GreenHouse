@@ -1,0 +1,73 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "npm run development -- --watch",
+    "watch-poll": "npm run watch -- --watch-poll",
+    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.5.0",
+    "@vue/cli-plugin-eslint": "^3.5.0",
+    "@vue/cli-plugin-pwa": "^3.5.0",
+    "@vue/cli-service": "^3.5.0",
+    "axios": "^0.19",
+    "babel-eslint": "^10.0.1",
+    "cross-env": "^5.2.1",
+    "eslint": "^5.8.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "laravel-mix": "^4.0.7",
+    "lodash": "^4.17.13",
+    "node-sass": "^4.9.0",
+    "resolve-url-loader": "^2.3.1",
+    "sass": "^1.15.2",
+    "sass-loader": "^7.1.0",
+    "vue": "^2.6.10",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "dependencies": {
+    "bootstrap": "4.3.1",
+    "bootstrap-vue": "2.0.0-rc.15",
+    "chart.js": "2.8.0",
+    "core-js": "2.6.5",
+    "flatpickr": "4.5.7",
+    "nouislider": "13.1.4",
+    "register-service-worker": "1.6.2",
+    "vue-chartjs": "3.4.2",
+    "vue-clipboard2": "0.3.0",
+    "vue-flatpickr-component": "8.1.2",
+    "vue-router": "3.0.1",
+    "vue2-transitions": "0.3.0",
+    "vuetify": "^2.1.9",
+    "webpack": "^4.41.2"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}
