@@ -4331,12 +4331,12 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'bar-chart',
-  "extends": vue_chartjs__WEBPACK_IMPORTED_MODULE_0__["Bar"],
+  extends: vue_chartjs__WEBPACK_IMPORTED_MODULE_0__["Bar"],
   mixins: [vue_chartjs__WEBPACK_IMPORTED_MODULE_0__["mixins"].reactiveProp, _globalOptionsMixin__WEBPACK_IMPORTED_MODULE_1__["default"]],
   props: {
     extraOptions: {
       type: Object,
-      "default": function _default() {
+      default: function _default() {
         return {};
       }
     }
@@ -4376,12 +4376,12 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'line-chart',
-  "extends": vue_chartjs__WEBPACK_IMPORTED_MODULE_0__["Line"],
+  extends: vue_chartjs__WEBPACK_IMPORTED_MODULE_0__["Line"],
   mixins: [vue_chartjs__WEBPACK_IMPORTED_MODULE_0__["mixins"].reactiveProp, _globalOptionsMixin__WEBPACK_IMPORTED_MODULE_1__["default"]],
   props: {
     extraOptions: {
       type: Object,
-      "default": function _default() {
+      default: function _default() {
         return {};
       }
     }
