@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Http\Request;
-
+use App\Htpp\Controllers\DataReceiver;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -17,5 +17,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-
-Route::get('/sensor', 'SesorControllerAPI@allUsers');
+Route::post('data/{data}','DataReceiver@receiveData');
